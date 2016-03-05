@@ -1,0 +1,12 @@
+<div ng-repeat="thread in board.threads" class="row threads">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://lorempixel.com/400/200/sports/" alt="...">
+    </a>
+  </div>
+  <p>
+    <b>#{{thread.id}}</b> {{thread.date}} <span class="badge">300</span> <a href="#/boards/b/{{thread.id}}.html" class="btn btn-primary btn-xs"><i class="fa fa-reply"></i> Reply</a>
+  </p>
+  <p>{{thread.description}}</p>
+  <p>
+</div>

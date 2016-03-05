@@ -1,0 +1,89 @@
+<div class="container">
+<button class="btn btn-primary" data-toggle="collapse" data-target="#formthread">
+  <b> New thread</b>
+</button>
+<form id="formthread" class="collapse">
+  <p>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Subject</span>
+    <input type="text" class="form-control" placeholder="Subject of thread (Ex: Cars)" aria-describedby="basic-addon1">
+  </div>
+  </p>
+
+  <!-- <div class="input-group">
+    <div class="input-group-btn">
+      <button type="button" class="btn btn-default" aria-label="Bold" title="Bold"><span class="glyphicon glyphicon-bold"></span></button>
+    </div>
+    <input type="text" class="form-control" aria-label="...">
+  </div>-->
+<p>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Text</span>
+    <textarea class="form-control" placeholder="" aria-describedby="basic-addon1" rows="10"></textarea>
+  </div>
+</p>
+
+  <p>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">File</span>
+    <input type="file" accept="image/png, image/jpeg, image/gif, video/webm, video/mp4, audio/mp3, audio/ogg" class="form-control">
+  </div>
+</p>
+  <small>Allowed files: <code>jpg, jpeg, bmp, gif, png, webm, mp4, mp3, ogg</code>
+  <br>Maximum size: <code>15 MB</code>
+  <br>Maximum dimension: <code>35000 x 10000</code> </small>
+  <p>
+
+  <p>
+    <button class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#threadOptions">
+  Options
+  </button>
+  <button class="btn btn-success btn-lg">
+    Create
+  </button>
+</p>
+  <div id="threadOptions" class="collapse">
+
+    <ul class="list-group">
+    <li class="list-group-item">Secure thread with password access:
+        <div class="input-group">
+          <input type="password" class="form-control" aria-label="...">
+          <small class="badge">Caution: Users will be asked to inform this password.</small>
+        </div>
+    </li>
+    <li class="list-group-item">Embed video
+      <div class="input-group">
+        <input type="text" placeholder="Ex: https://www.youtube.com/watch?v=CjwwmFrsX_E" class="form-control">
+        <p><span class="badge">Youtube</span><span class="badge">Twitch</span></p>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <input type="checkbox" aria-label="..." ng-model="thread.archive">
+            </span>
+            <input type="text" class="form-control" placeholder="Auto archive thread @ archive.is" disabled aria-label="...">
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+    </li>
+
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <input type="checkbox" aria-label="..." ng-model="thread.notify">
+            </span>
+            <input type="text" class="form-control" placeholder="Notify me every new post." disabled aria-label="...">
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+    </li>
+  </ul>
+  </div>
+  </p>
+</form>
+</div>
